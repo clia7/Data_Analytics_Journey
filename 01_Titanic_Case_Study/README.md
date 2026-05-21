@@ -29,9 +29,9 @@ The goal of this project is to analyze the historic Titanic passenger data and t
 ### Current Model Standings (Baseline)
 | Model | Current Accuracy | Notes |
 | :--- | :--- | :--- |
-| **Logistic Regression** 📈 | **82.68%** | Top baseline performer. Currently evaluating coefficients to understand feature impact. |
-| **Random Forest** 🌲 | **81.56%** | Strong, stable performance. Highly robust against overfitting. |
-| **K-Nearest Neighbors (KNN)** 🤖 | **80.45%** | Solid baseline using neighbor-based spatial classification. |
+| **Logistic Regression** 📈 | **%** | Top baseline performer. Currently evaluating coefficients to understand feature impact. |
+| **Random Forest** 🌲 | **%** | Strong, stable performance. Highly robust against overfitting. |
+| **K-Nearest Neighbors (KNN)** 🤖 | **%** | Solid baseline using neighbor-based spatial classification. |
 
 ---
 
