@@ -9,7 +9,8 @@ The goal of this project is to analyze the historic Titanic passenger data and t
 
 ## ⚙️ Tech Stack & Tools
 * **Environment:** VS Code🖥️
-* **Libraries:** * Data Handling: `pandas`, `numpy`
+* **Libraries:** 
+  * Data Handling: `pandas`, `numpy`
   * Machine Learning: `scikit-learn` (Logistic Regression, Random Forest, KNN)
   * Metrics: `accuracy_score`
 
