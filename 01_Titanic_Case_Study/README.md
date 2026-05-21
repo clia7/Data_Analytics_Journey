@@ -1,6 +1,6 @@
 # 🚢 Titanic - Machine Learning from Disaster
 
-An end-to-end Machine Learning pipeline to predict passenger survival on the Titanic using different classification algorithms. This project is part of my monthly data analysis showcase and serves as a benchmark for building robust ML workflows.
+This is my first full end-to-end machine learning project. I created this project as part of my monthly learning routine. 
 
 ---
 
