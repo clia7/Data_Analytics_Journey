@@ -1,4 +1,4 @@
-# Python for Data Analysis
+# Data Analytics Journey
 
 This repository documents my learning journey in Data Analytics using Python.
 
