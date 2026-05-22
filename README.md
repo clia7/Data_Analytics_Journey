@@ -1,4 +1,4 @@
-# Python for Data Analysis
+# Data Analytics Journey
 
 This repository documents my learning journey in Data Analytics using Python.
 
@@ -41,7 +41,7 @@ The focus is not only on final results, but also on:
 Each new project is meant to reflect gradual progress and growing experience in Data Analytics and Machine Learning.
 
 ---
-wa
+
 # Repository Structure
 
 ```bash
