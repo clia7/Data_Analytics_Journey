@@ -7,10 +7,14 @@ This is my first full end-to-end machine learning project. I created this projec
 ## 📊 Project Overview
 The goal of this project is to analyze the historic Titanic passenger data and train machine learning models to predict whether a passenger survived the disaster or not. It transitions from exploratory data analysis (EDA) to feature engineering and model evaluation.
 
+## 🔄 Project Iterations
+* **Standard Dataset:** My intial run using basic cleaned features to established initial model 
+* **Detailed Datased (-b Files):** My second run. Here I expand the dataset to over 40 columns to check if it is possible to improve the model predictions
+
 ## ⚙️ Tech Stack & Tools
 * **Environment:** VS Code🖥️
 * **Libraries:** 
-  * Data Handling: `pandas`, `numpy`
+  * Data Handling & EDA: `pandas`, `numpy`, `matplotlib`, `seaborn` 📊
   * Machine Learning: `scikit-learn` (Logistic Regression, Random Forest, KNN)
   * Metrics: `accuracy_score`
 
