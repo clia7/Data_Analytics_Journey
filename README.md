@@ -50,7 +50,7 @@ Python_for_Data_Analysis/
 ├── 01_Titanic_Case_Study/
 │   ├── 01-Titanic_EDA.ipynb
 │   ├── 02-Titanic_FE.ipynb
-│   ├── 02b-Titanic_FE_Detailed.ipynb
+│   ├── 02b-Titanic_FE_Detailed.ipynbode
 │   ├── 03-Titanic_ML.ipynb
 │   ├── 03b-Titanic_ML_Detailed.ipynb
 │   └── README.md
