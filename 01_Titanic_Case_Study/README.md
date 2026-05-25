@@ -5,8 +5,8 @@ This is my first full end-to-end machine learning project, developed as part of 
 ---
 
 ## 🔗 Quick Links & Project Showcase
-* **📊 View the "Beautiful" Interactive Notebook on Kaggle:** [![Kaggle](https://img.shields.io/badge/Kaggle-00F5D4?style=for-the-badge&logo=kaggle&logoColor=white)](""P""latzhalter"")
-* **💻 View Full Project Code & Pipeline on GitHub:** [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](""Platzhalter)
+* **📊 View the Notebook on Kaggle:** [![Kaggle](https://img.shields.io/badge/Kaggle-00F5D4?style=for-the-badge&logo=kaggle&logoColor=white)](""P""latzhalter"")
+* **💻 View Full Project Code on GitHub:** [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](""Platzhalter)
 
 ---
 
@@ -62,5 +62,5 @@ The goal of this project is to analyze the historic Titanic passenger data and t
 ---
 
 ### 🔮 Next Month's Goals (June 2026)
-1. **Robust Engineering:** Implement `try-except` exception handling to safely secure data loading paths and handle unexpected file issues.
-2. **Advanced Visualization:** Introduce **Power BI** into the workflow to create interactive business dashboards and elevate data storytelling to a professional level.
+1. **Robust Engineering:** Implement `try-except` exception handling to secure data loading paths and handle unexpected file issues.
+2. **Advanced Visualization:** Introduce **Power BI** into the workflow to create interactive business dashboards and elevate data storytelling.
