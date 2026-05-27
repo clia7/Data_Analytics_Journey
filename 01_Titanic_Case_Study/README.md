@@ -5,8 +5,8 @@ This is my first full end-to-end machine learning project, developed as part of 
 ---
 
 ## 🔗 Quick Links & Project Showcase
-* **📊 View the Notebook on Kaggle:** [![Kaggle](https://img.shields.io/badge/Kaggle-00F5D4?style=for-the-badge&logo=kaggle&logoColor=white)](""P""latzhalter"")
-* **💻 View Full Project Code on GitHub:** [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](""Platzhalter)
+* **📊 View the Notebook on Kaggle:** [![Kaggle](https://img.shields.io/badge/Kaggle-00F5D4?style=for-the-badge&logo=kaggle&logoColor=white)]("https://www.kaggle.com/code/cliaa74/titanic-survival-prediction")
+* **💻 View Full Project Code on GitHub:** [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)]("https://github.com/clia7/Titanic_Survival_Prediction/tree/main")
 
 ---
 
