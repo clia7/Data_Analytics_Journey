@@ -19,7 +19,7 @@ The goal of this project is to analyze the historic Titanic passenger data and t
 * **Approach:** Basic data cleaning and straightforward feature encoding. Missing ages were filled with a global median, and categorical variables (`Sex`, `Embarked`) were converted directly into dummy variables.
 * **Result:** Established a solid baseline dataset with **26 columns**, but the models suffered from unrefined features and general noise.
 
-### 🔹 2. Detailed Dataset (Second Run: `01b`, `02b`, `03b` Detailed Files)
+### 🔹 2. Detailed Dataset (Second Run: `01b`, `02b`, `03b` V2 Files)
 * **Approach:** Advanced feature engineering and targeted data transformations based on demographic insights:
   * **Title-Based Age Imputation:** Extracted passenger titles (*Mr, Mrs, Miss, Master*) to impute missing ages based on specific peer-group medians instead of a blind global average.
   * **Socio-Economic Grouping:** Engineered a `Ticket_Group` feature using ticket numbers to identify passengers traveling together beyond immediate family sizes.
