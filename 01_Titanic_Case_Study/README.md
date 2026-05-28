@@ -30,7 +30,8 @@ The goal of this project is to analyze the historic Titanic passenger data and t
 
 ## ⚙️ Tech Stack & Tools
 * **Environment:** VS Code 🖥️ & Jupyter Notebooks
-* **Libraries:** * Data Handling & EDA: `pandas`, `numpy`, `matplotlib`, `seaborn` 📊
+* **Libraries:** 
+  * Data Handling & EDA: `pandas`, `numpy`, `matplotlib`, `seaborn` 📊
   * Machine Learning: `scikit-learn` (`LogisticRegression`, `RandomForestClassifier`, `KNeighborsClassifier`)
   * Validation Metrics: `accuracy_score`
 
