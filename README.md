@@ -48,12 +48,20 @@ Each new project is meant to reflect gradual progress and growing experience in 
 Python_for_Data_Analysis/
 │
 ├── 01_Titanic_Case_Study/
-│   ├── 01-Titanic_EDA.ipynb
-│   ├── 02-Titanic_FE.ipynb
-│   ├── 02b-Titanic_FE_Detailed.ipynbode
-│   ├── 03-Titanic_ML.ipynb
-│   ├── 03b-Titanic_ML_Detailed.ipynb
+│   ├── 01_Titanic_EDA.ipynb
+│   ├── 01b_Titanic_EDA_V2.ipynb
+│   ├── 02_Titanic_FE.ipynb
+│   ├── 02b_Titanic_FE_V2.ipynb
+│   ├── 03_Titanic_ML.ipynb
+│   ├── 03b_Titanic_ML_V2.ipynb
+│   ├── Titanic_for_ML_Detailed.csv
+│   ├── Titanic_for_ML.csv
+│   ├── Titanic_Train.csv
 │   └── README.md
+├── 02_Hotel_Booking_Case_Study/
+│   ├── 01_Hotel_Booking_EDA.ipynb
+│   ├── 02_Hotel_Booking_FE.ipynb
+│   ├── hotel_bookings.csv
 │
 ├── More projects coming soon...
 │
