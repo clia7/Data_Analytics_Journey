@@ -1,0 +1,66 @@
+# 🏨 Hotel Booking Cancellation Prediction
+
+This end-to-end machine learning project focuses on analyzing hotel demand patterns and building predictive models to forecast booking cancellations. Developed as part of my structured monthly learning routine, it highlights my transition from exploratory data analysis (EDA) to advanced feature engineering and preparing robust datasets for machine learning.
+
+---
+
+## 📊 Project Overview
+The goal of this project is to tackle a classic revenue management problem in the hospitality industry: predicting whether a guest will cancel their booking (`is_canceled`). High cancellation rates directly impact hotel revenue and room allocation strategies. 
+
+Rather than throwing raw data directly into a model, this project showcases an iterative data pipeline where exploratory data insights drive custom feature engineering, rigorous handling of missing values, and systematic data leakage prevention.
+
+---
+
+## 🔄 Project Pipeline & Structure
+
+### 🔹 1. Exploratory Data Analysis (`01_Hotel_Booking_EDA.ipynb`)
+* **Objective:** Understand customer behavior, distribution channels, and booking patterns.
+* **Key Achievements:**
+  * Analyzed market segments, identifying Online Travel Agencies (OTAs) as the primary booking driver but also the source of high cancellation volumes.
+  * Investigated customer loyalty trends, showing an exceptionally low rate of returning guests.
+  * Explored geographic market concentrations, locating the primary customer base in Western Europe (Portugal, Great Britain, France, Spain, Germany).
+
+### 🔹 2. Feature Engineering & Pre-Processing (`02_Hotel_Booking_FE.ipynb`)
+* **Objective:** Clean, transform, and structure the data into an optimized format for Machine Learning.
+* **Key Achievements:**
+  * **Data Leakage Prevention:** Identified and dropped `reservation_status` and `reservation_status_date`. Since these columns contain post-booking outcomes (like 'Canceled' or 'No-Show' timestamps), including them would cause severe data leakage and unrealistic model performance.
+  * **Domain-Specific Aggregations:** Engineered a `total_stay_length` feature and combined it with the Average Daily Rate (`adr`) to calculate the financial impact via `booking_value`. Calculated `total_pax` to evaluate group sizes.
+  * **Smart Categorical Encoding:** Transformed ID-heavy, sparse features (`agent`, `company`) into lightweight, binary markers (`has_agent`, `has_company`) using type-casting (`.astype(int)`).
+  * **Ordinal & One-Hot Encoding:** Applied structured dictionary mapping to convert textual months into chronological numbers (`arrival_date_month_numb`). Used `pd.get_dummies()` to seamlessly expand nominal text features (`hotel`, `meal`, `market_segment`, etc.) into machine-readable numeric spaces.
+
+### 🔹 3. Machine Learning Model Training (`03_Hotel_Booking_ML.ipynb`)
+* **Objective:** Split the prepared numerical matrix, train classification models, and optimize prediction accuracy.
+* *(Note: This section will be updated with the final validation metrics and model standings as soon as the training runs are complete!)*
+
+---
+
+## ⚙️ Tech Stack & Tools
+* **Environment:** Jupyter Notebooks 🖥️ / VS Code
+* **Libraries:** * Data Handling & EDA: `pandas`, `numpy`, `matplotlib`, `seaborn` 📊
+  * Machine Learning Pipeline: `scikit-learn`
+* **Defensive Coding:** Standardized robust data loading wrapped in `try-except` blocks to handle file path exceptions cleanly.
+
+---
+
+## 🛠️ Machine Learning Pipeline & Results
+
+### 📊 Validation Set Performance Standings
+
+| Model Classifier | Accuracy (Baseline) | Precision / Recall | Strategic Note |
+| :--- | :---: | :---: | :--- |
+| **Model 1 (e.g., Logistic Regression)** | *TBD%* | *TBD* | *Will be updated after training.* |
+| **Model 2 (e.g., Random Forest)** | *TBD%* | *TBD* | *Will be updated after training.* |
+| **Model 3 (e.g., XGBoost)** | *TBD%* | *TBD* | *Will be updated after training.* |
+
+---
+
+## 📝 My Monthly Reflection: June 2026
+
+### 🚀 What went well?
+* ### 🧠 Key Learnings
+* ### 🔄 What would I do differently next time?
+* ---
+
+### 🔮 Next Month's Goals (July 2026)
+1. **SQL Integration via VS Code:** Establish a seamless database workflow by connecting and executing SQL queries directly within the VS Code environment to handle larger, relational data structures.
+2. **Advanced Functional Programming & Error Handling:** Refactor repetitive code into modular Python functions to improve efficiency, while implementing defensive programming techniques (like validation checks and error handling) to minimize runtime failures.
