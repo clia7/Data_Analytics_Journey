@@ -57,7 +57,14 @@ Rather than throwing raw data directly into a model, this project showcases an i
 ## 📝 My Monthly Reflection: June 2026
 
 ### 🚀 What went well?
-* ### 🧠 Key Learnings
+
+### 🧠 Key Learnings
+* **Classification Report:** I learned that pure Accuracy can be misleading. Instead, I now understand how to balance Precision (minimizing false alarms) and Recall (finding actual cancellations) depending on the business goals.
+* **Model Differences:**
+  * **Logistic Regression:** Calculates probabilities based on feature weights. Crucial step: The data must be scaled beforehand.
+  * **Random Forest:** Multiple trees make decisions simultaneously and independently.
+  * **XGBoost:** Works sequentially. One tree learns from the mistakes of the previous tree and tries to fix them in the next step.
+
 * ### 🔄 What would I do differently next time?
 * ---
 
