@@ -60,9 +60,12 @@ Python_for_Data_Analysis/
 │   └── README.md
 ├── 02_Hotel_Booking_Case_Study/
 │   ├── 01_Hotel_Booking_EDA.ipynb
+│   ├── 01b_Hotel_Booking_EDA_V2.ipynb
 │   ├── 02_Hotel_Booking_FE.ipynb
+│   ├── 03_Hotel_Booking_ML.ipynb
 │   ├── hotel_bookings.csv
+│   ├── hotel_booking_ml.csv
 │
-├── More projects coming soon...
+├── More projects coming...
 │
 └── README.md
