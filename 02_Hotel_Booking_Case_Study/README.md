@@ -39,8 +39,8 @@ Rather than throwing raw data directly into a model, this project showcases an i
 * **Libraries:** * Data Handling & EDA: `pandas`, `numpy`, `matplotlib`, `seaborn` 📊
   * Machine Learning Pipeline: `scikit-learn`
 * **Defensive Coding:** Standardized robust data loading wrapped in `try-except` blocks to handle file path exceptions cleanly.
-* **Business Intelligence & Analytics:** `Power BI` 📈 (Created interactive stakeholder dashboards directly via Power BI Service / Semantic Modeling using custom DAX formulations)
-[👉 Open Interactive Power BI Dashboard](https://app.powerbi.com/reportEmbed?reportId=835414b7-216b-4b38-91bb-7930515115eb&autoAuth=true&ctid=f419c9fe-f7b0-4d87-bee8-e8dfb2190cab)
+* **Business Intelligence & Analytics:** `Power BI` 📈 (Created interactive dashboards via Power BI Service / Semantic Modeling using custom DAX formulations)
+
 ---
 
 ## 🛠️ Machine Learning Pipeline & Results
