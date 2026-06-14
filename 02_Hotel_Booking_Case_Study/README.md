@@ -19,6 +19,7 @@ Rather than throwing raw data directly into a model, this project showcases an i
   * Analyzed market segments, identifying Online Travel Agencies (OTAs) as the primary booking driver but also the source of high cancellation volumes.
   * Investigated customer loyalty trends, showing an exceptionally low rate of returning guests.
   * Explored geographic market concentrations, locating the primary customer base in Western Europe (Portugal, Great Britain, France, Spain, Germany).
+* **Additional Insight (2nd Iteration Split Analysis):** Converted the EDA into a comparative scenario analysis during the second iteration by splitting the data into two distinct pipelines (with and without duplicates). This revealed that the 31,994 duplicate entries were heavily driven by large-scale bulk group bookings within the *Groups* and *Offline TA/TO* segments that were canceled simultaneously, rather than random data anomalies.
 
 ### 🔹 2. Feature Engineering & Pre-Processing (`02_Hotel_Booking_FE.ipynb`)
 * **Objective:** Clean, transform, and structure the data into an optimized format for Machine Learning.
