@@ -1,6 +1,6 @@
 # 🏨 Hotel Booking Cancellation Prediction
 
-This end-to-end machine learning project focuses on analyzing hotel demand patterns and building predictive models to forecast booking cancellations. Developed as part of my structured monthly learning routine, it highlights my transition from exploratory data analysis (EDA) to advanced feature engineering and preparing robust datasets for machine learning.
+This end-to-end machine learning project focuses on analyzing hotel demand patterns and building predictive models to forecast booking cancellations. Developed as part of my structured monthly learning routine, it highlights my transition from exploratory data analysis (EDA) to feature engineering and preparing datasets for machine learning.
 
 ---
 
@@ -19,9 +19,9 @@ Rather than throwing raw data directly into a model, this project showcases an i
   * Analyzed market segments, identifying Online Travel Agencies (OTAs) as the primary booking driver but also the source of high cancellation volumes.
   * Investigated customer loyalty trends, showing an exceptionally low rate of returning guests.
   * Explored geographic market concentrations, locating the primary customer base in Western Europe (Portugal, Great Britain, France, Spain, Germany).
-* **Additional Insight (2nd Iteration Split Analysis):** Converted the EDA into a comparative scenario analysis during the second iteration by splitting the data into two distinct pipelines (with and without duplicates). This revealed that the 31,994 duplicate entries were heavily driven by large-scale bulk group bookings within the *Groups* and *Offline TA/TO* segments that were canceled simultaneously, rather than random data anomalies.
+* **Additional Insight (2nd Iteration Split Analysis - `01b_Hotel_Booking_EDA_V2.ipynb`):** Converted the EDA into a comparative scenario analysis during the second iteration by splitting the data into two distinct pipelines (with and without duplicates). This revealed that the 31,994 duplicate entries were heavily driven by large-scale bulk group bookings within the *Groups* and *Offline TA/TO* segments that were canceled simultaneously, rather than random data anomalies.
 
-### 🔹 2. Feature Engineering & Pre-Processing (`02_Hotel_Booking_FE.ipynb`)
+### 🔹 2. Feature Engineering & Pre-Processing (`02_Hotel_Booking_FE.ipynb` & `02b_Hotel_Booking_FE_V2.ipynb`)
 * **Objective:** Clean, transform, and structure the data into an optimized format for Machine Learning.
 * **Key Achievements:**
   * **Data Leakage Prevention:** Identified and dropped `reservation_status` and `reservation_status_date`. Since these columns contain post-booking outcomes (like 'Canceled' or 'No-Show' timestamps), including them would cause severe data leakage and unrealistic model performance.
@@ -29,16 +29,18 @@ Rather than throwing raw data directly into a model, this project showcases an i
   * **Smart Categorical Encoding:** Transformed ID-heavy, sparse features (`agent`, `company`) into lightweight, binary markers (`has_agent`, `has_company`) using type-casting (`.astype(int)`).
   * **Ordinal & One-Hot Encoding:** Applied structured dictionary mapping to convert textual months into chronological numbers (`arrival_date_month_numb`). Used `pd.get_dummies()` to seamlessly expand nominal text features (`hotel`, `meal`, `market_segment`, etc.) into machine-readable numeric spaces.
 
-### 🔹 3. Machine Learning Model Training (`03_Hotel_Booking_ML.ipynb`)
-* **Objective:** Split the prepared numerical matrix, train classification models, and optimize prediction accuracy.
-* *(Note: This section will be updated with the final validation metrics and model standings as soon as the training runs are complete!)*
+### 🔹 3. Machine Learning Model Training (`03_Hotel_Booking_ML.ipynb` & `03b_Hotel_Booking_ML_V2.ipynb`)
+* **Objective:** Train classification models and compare the performance between the deduplicated and non-deduplicated datasets.
+* **Key Achievements:**
+  * Evaluated Logistic Regression and Random Forest models on the original dataset (with duplicates).
+  * In the second iteration, implemented an XGBoost Classifier and compared it against the Random Forest model on the strict, deduplicated dataset.
 
 ---
 
 ## ⚙️ Tech Stack & Tools
 * **Environment:** Jupyter Notebooks 🖥️ / VS Code
 * **Libraries:** * Data Handling & EDA: `pandas`, `numpy`, `matplotlib`, `seaborn` 📊
-  * Machine Learning Pipeline: `scikit-learn`
+  * Machine Learning Pipeline: `scikit-learn`, `xgboost` 🤖
 * **Defensive Coding:** Standardized robust data loading wrapped in `try-except` blocks to handle file path exceptions cleanly.
 * **Business Intelligence & Analytics:** `Power BI` 📈 (Created interactive dashboards via Power BI Service / Semantic Modeling using custom DAX formulations)
 
@@ -46,19 +48,23 @@ Rather than throwing raw data directly into a model, this project showcases an i
 
 ## 🛠️ Machine Learning Pipeline & Results
 
-### 📊 Validation Set Performance Standings
+### 📊 Validation Set Performance Standings (Deduplicated Dataset)
 
-| Model Classifier | Accuracy (Baseline) | Precision / Recall | Strategic Note |
+| Model Classifier | Accuracy (Baseline) | Precision / Recall (Class 1) | Strategic Note |
 | :--- | :---: | :---: | :--- |
-| **Model 1 (e.g., Logistic Regression)** | *TBD%* | *TBD* | *Will be updated after training.* |
-| **Model 2 (e.g., Random Forest)** | *TBD%* | *TBD* | *Will be updated after training.* |
-| **Model 3 (e.g., XGBoost)** | *TBD%* | *TBD* | *Will be updated after training.* |
+| **Logistic Regression** | *Baseline to be updated* | *Baseline to be updated* | Requires feature scaling beforehand. |
+| **Random Forest** | 84.15% | - / 64% | Excellent balance of detecting cancellations and avoiding false alarms. |
+| **XGBoost** | 84.02% | - / 65% | **Selected Model.** Marginally higher recall makes it slightly better for overbooking strategies. |
+
+*(Note: No hyperparameter tuning was performed in this iteration).*
 
 ---
 
 ## 📝 My Monthly Reflection: June 2026
 
 ### 🚀 What went well?
+* Effectively utilizing Python's Pandas library, which has made data manipulation significantly more accessible than I initially anticipated.
+* Setting up the comparative analysis pipeline (V2) to clearly demonstrate the impact of data deduplication on model outcomes.
 
 ### 🧠 Key Learnings
 * **Classification Report:** I learned that pure Accuracy can be misleading. Instead, I now understand how to balance Precision (minimizing false alarms) and Recall (finding actual cancellations) depending on the business goals.
@@ -67,8 +73,10 @@ Rather than throwing raw data directly into a model, this project showcases an i
   * **Random Forest:** Multiple trees make decisions simultaneously and independently.
   * **XGBoost:** Works sequentially. One tree learns from the mistakes of the previous tree and tries to fix them in the next step.
 
-* ### 🔄 What would I do differently next time?
-* ---
+### 🔄 What would I do differently next time?
+* Explore strategies for handling imbalanced classes, as cancellations might represent a smaller fraction of the dataset after deduplication.
+
+---
 
 ### 🔮 Next Month's Goals (July 2026)
 1. **SQL Integration via VS Code:** Establish a seamless database workflow by connecting and executing SQL queries directly within the VS Code environment to handle larger, relational data structures.
