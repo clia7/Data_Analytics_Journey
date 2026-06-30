@@ -4,8 +4,8 @@ This end-to-end machine learning project focuses on analyzing hotel demand patte
 
 ---
 
-![Power BI Dashboard](Booking_Analysis_Dashboard.png)
-![Power BI Dashboard](Cancellation_Analysis_Dashboard.png)
+![Power BI Dashboard](/02_Hotel_Booking_Case_Study/picture%20/Booking_Analysis_Dashboard.png)
+![Power BI Dashboard](/02_Hotel_Booking_Case_Study/picture%20/Booking_Analysis_Dashboard.png)
 [Power BI Interactive Dashboard](https://app.powerbi.com/reportEmbed?reportId=03d74f5f-497c-4202-9f58-d1bdec0ed977&autoAuth=true&ctid=f419c9fe-f7b0-4d87-bee8-e8dfb2190cab&actionBarEnabled=true)
 
 ## 📊 Project Overview
