@@ -52,9 +52,9 @@ Rather than throwing raw data directly into a model, this project showcases an i
 
 | Model Classifier | Accuracy (Baseline) | Precision / Recall (Class 1) | Strategic Note |
 | :--- | :---: | :---: | :--- |
-| **Logistic Regression** | *Baseline to be updated* | *Baseline to be updated* | Requires feature scaling beforehand. |
-| **Random Forest** | 84.15% | - / 64% | Excellent balance of detecting cancellations and avoiding false alarms. |
-| **XGBoost** | 84.02% | - / 65% | **Selected Model.** Marginally higher recall makes it slightly better for overbooking strategies. |
+| **Logistic Regression** | 78.81%* | 66% / 47% | Requires feature scaling beforehand. |
+| **Random Forest** | 84.15% | 75% / 64% | Excellent balance of detecting cancellations and avoiding false alarms. |
+| **XGBoost** | 84.02% | 74% / 65% | **Selected Model.** Minimal higher recall makes it slightly better for overbooking strategies. |
 
 *(Note: No hyperparameter tuning was performed in this iteration).*
 
