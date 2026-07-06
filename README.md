@@ -61,12 +61,11 @@ Python_for_Data_Analysis/
 ├── 02_Hotel_Booking_Case_Study/
 │   ├── data/
 │   │   ├── hotel_bookings_ml.csv
-│   │   └── hotel_booking_no_dup_ml.csv
+│   │   ├── hotel_booking_no_dup_ml.csv
 │   │   ├── hotel_bookings_no_dup.csv
-│   │   └── hotel_booking_with_dup_ml.csv
+│   │   ├── hotel_booking_with_dup_ml.csv
 │   │   ├── hotel_bookings_with_dup.csv
-│   │   └── hotel_booking.csv
-│   │
+│   │   └──  hotel_booking.csv
 │   ├── notebooks/
 │   │   ├── 01_Hotel_Booking_EDA.ipynb
 │   │   ├── 01b_Hotel_Booking_EDA_V2.ipynb
@@ -74,12 +73,16 @@ Python_for_Data_Analysis/
 │   │   ├── 02b_Hotel_Booking_FE_V2.ipynb
 │   │   ├── 03_Hotel_Booking_ML.ipynb
 │   │   └── 03b_Hotel_Booking_ML_V2.ipynb
-│   │
 │   ├── picture/
 │   │   ├── Booking_Analysis_Dashbaord.png
-│   │   ├── Cancellation_Analysis_Dashboard.png
-│   │
+│   │   └── Cancellation_Analysis_Dashboard.png
 │   ├── HotelBookingReport.pdf
+├── 03_Superstore_Case_Study/
+│   ├── data/
+│   │   └── superstore.csv
+│   ├── notebooks/
+│   │   ├── 01_Superstore_EDA.ipynb
+│   │   └── 04_Superstore_SQL.ipynb
 │
 ├── More projects comming...
 │
