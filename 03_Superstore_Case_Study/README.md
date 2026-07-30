@@ -42,16 +42,22 @@ Two primary models were trained to predict sales amounts:
 ## 📝 My Monthly Reflection: July 2026
 
 ### 🚀 What went well?
-
+- Successfully built SQL queries using SQLite3 and became more confident working with relational databases.
+- Completed a full end-to-end data analysis project, including data cleaning, exploratory data analysis (EDA), feature engineering, and machine learning.
 
 ### 🧠 Key Learnings
-
+- Gained my first hands-on experience with hyperparameter tuning
+- Developed a better understanding of Decision Trees, Random Forests, and Gradient Boosting.
+- Learned that hyperparameter optimization does not automatically improve model performance and that model evaluation should always be based on unseen test data.
+- Improved my ability to interpret regression metrics such as MAE, RMSE, and R².
 
 ### 🔄 What would I do differently next time?
-
+- Spend more time understanding the theory before implementing new machine learning techniques.
+- Experiment with a wider range of hyperparameters instead of only a small parameter grid.
+- Plan the project workflow earlier to avoid repeating work when using different datasets.
 
 ---
 
 ### 🔮 Next Month's Goals (August 2026)
-1. **Merge with Python:** 
-2. **Hyperparameter adjustment:** 
+1. **Merge Multiple CSV Files with Python:** Learn how to combine multiple CSV files into a single dataset using Python and Pandas.
+2. **Hyperparameter Adjustment:** Explore hyperparameter tuning in greater depth by experimenting with different parameter combinations and optimization techniques such as GridSearchCV and RandomizedSearchCV.
