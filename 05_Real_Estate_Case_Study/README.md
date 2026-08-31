@@ -37,5 +37,5 @@
 
 ## 🔮 Next Month's Goals (October 2026)
 
-1. 
-2. 
+1. Automatization
+2. Dashboards with Python
